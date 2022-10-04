@@ -1,0 +1,16 @@
+### Criar Folha
+POST https://localhost:5001/api/folha/criar
+Content-Type: application/json
+
+{
+    "valorHora" : 600,
+    "quantidadeDeHoras" : 100,
+    "mesAno" : 1004,
+    "funcionarioID" : 2
+}
+
+### Listar Folhas
+GET https://localhost:5001/api/folha/listar
+
+### Buscar
+GET https://localhost:5001/api/folha/buscarfolha/11111111111
