@@ -3,9 +3,8 @@ POST https://localhost:5001/api/folha/criar
 Content-Type: application/json
 
 {
-    "valorHora" : 600,
+    "valorHora" : 25,
     "quantidadeDeHoras" : 100,
-    "mesAno" : 1004,
     "funcionarioID" : 2
 }
 
@@ -13,4 +12,4 @@ Content-Type: application/json
 GET https://localhost:5001/api/folha/listar
 
 ### Buscar
-GET https://localhost:5001/api/folha/buscarfolha/11111111111
+GET https://localhost:5001/api/folha/filtrar/11111111111/10/2022

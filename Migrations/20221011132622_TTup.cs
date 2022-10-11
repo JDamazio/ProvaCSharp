@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ProvaCsharp.Migrations
 {
-    public partial class Dbfinal : Migration
+    public partial class TTup : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -37,7 +37,9 @@ namespace ProvaCsharp.Migrations
                     INSS = table.Column<double>(type: "REAL", nullable: false),
                     FGTS = table.Column<double>(type: "REAL", nullable: false),
                     SalarioLiquido = table.Column<double>(type: "REAL", nullable: false),
-                    MesAno = table.Column<int>(type: "INTEGER", nullable: false),
+                    Mes = table.Column<int>(type: "INTEGER", nullable: false),
+                    Ano = table.Column<int>(type: "INTEGER", nullable: false),
+                    CriadoEm = table.Column<DateTime>(type: "TEXT", nullable: false),
                     FuncionarioId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>

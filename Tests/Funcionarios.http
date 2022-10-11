@@ -6,9 +6,9 @@ POST https://localhost:5001/api/funcionario/cadastrar
 Content-Type: application/json
 
 {
-    "nome" : "TesteBusca",
-    "cpf" : "12312312312",
-    "email" : "teste@gmail.com",
+    "nome" : "Bento",
+    "cpf" : "11111111111",
+    "email" : "PeleDeNescau@gmail.com",
     "nascimento" : "2002-03-25"
 }
 

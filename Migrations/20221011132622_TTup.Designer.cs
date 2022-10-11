@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ProvaCsharp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20221004151036_Dbfinal")]
-    partial class Dbfinal
+    [Migration("20221011132622_TTup")]
+    partial class TTup
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,6 +24,12 @@ namespace ProvaCsharp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("Ano")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CriadoEm")
+                        .HasColumnType("TEXT");
+
                     b.Property<double>("FGTS")
                         .HasColumnType("REAL");
 
@@ -36,7 +42,7 @@ namespace ProvaCsharp.Migrations
                     b.Property<double>("IRRF")
                         .HasColumnType("REAL");
 
-                    b.Property<int>("MesAno")
+                    b.Property<int>("Mes")
                         .HasColumnType("INTEGER");
 
                     b.Property<double>("QuantidadeDeHoras")
